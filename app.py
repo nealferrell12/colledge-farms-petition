@@ -817,7 +817,20 @@ def api_signatures():
 
 
 # Initialize database on import (needed for gunicorn)
-init_db()
+try:
+    init_db()
+except Exception as e:
+    print(f"Warning: Could not initialize database: {e}")
+
+
+@app.route("/health")
+def health():
+    try:
+        conn = get_db()
+        conn.close()
+        return jsonify({"status": "ok", "db": "connected", "db_url": bool(DATABASE_URL)})
+    except Exception as e:
+        return jsonify({"status": "error", "error": str(e), "db_url": bool(DATABASE_URL)}), 500
 
 if __name__ == "__main__":
     print("Starting Colledge Farms HOA Petition App...")
