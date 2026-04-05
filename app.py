@@ -363,7 +363,7 @@ PETITION_TEMPLATE = """
 
     <div class="content">
         <p class="intro">
-            As homeowners in our community, we're asking you to review and vote on the two items below. By signing this
+            As homeowners in our community, we're asking you to review and sign a petition to show support on the two items below. By signing this
             petition, you're confirming that you live in the neighborhood and that you support both measures.
         </p>
 
