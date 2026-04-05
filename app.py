@@ -6,7 +6,10 @@ from functools import wraps
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-change-me")
 
-DATABASE_URL = os.environ.get("DATABASE_URL")
+DATABASE_URL = os.environ.get("DATABASE_URL", "")
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+DATABASE_URL = DATABASE_URL or None
 DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "petition.db")
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "colledge2026")
 
@@ -813,8 +816,10 @@ def api_signatures():
     return jsonify(rows)
 
 
+# Initialize database on import (needed for gunicorn)
+init_db()
+
 if __name__ == "__main__":
-    init_db()
     print("Starting Colledge Farms HOA Petition App...")
     port = int(os.environ.get("PORT", 5000))
     print(f"Open http://localhost:{port} in your browser")
