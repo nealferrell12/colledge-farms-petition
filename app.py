@@ -381,7 +381,7 @@ PETITION_TEMPLATE = """
             <p>
                 We've negotiated a deal with Symphony: if we help them get city approval to develop a 9th lot (carved out of the
                 existing 8-lot area, and sized to match the rest of our homes), Symphony will contribute <strong>$65,000 to our HOA
-                fund</strong>. That money would go toward a new amenity on our HOA property &mdash; with the community deciding
+                fund</strong>. That money would go toward a new amenity on our HOA property &mdash; with the HOA Members deciding
                 together what that amenity will be.
             </p>
         </div>
