@@ -365,6 +365,8 @@ PETITION_TEMPLATE = """
         <p class="intro">
             As homeowners in our community, we're asking you to review and sign a petition to show support on the two items below. By signing this
             petition, you're confirming that you live in the neighborhood and that you support both measures.
+            This is not an official vote to make this happen, as Lehi City has to approve a 9th lot for Symphony Homes.
+            You are simply showing your support by signing. Your signature entry will be used to show the city you support these measures.
         </p>
 
         <div class="item">
