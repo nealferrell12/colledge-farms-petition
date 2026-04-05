@@ -355,7 +355,7 @@ PETITION_TEMPLATE = """
 
 <div class="container">
     <div class="header">
-        <h1>Colledge Farms Community Petition</h1>
+        <h1>Colledge Farms HOA Petition</h1>
         <p class="subtitle">New Lot Annexation &amp; Community Amenity Fund</p>
     </div>
 
@@ -374,7 +374,7 @@ PETITION_TEMPLATE = """
             <p>
                 Symphony is currently developing 8 lots right next to our neighborhood. This vote is to officially bring those 8
                 lots into our HOA boundary. Once annexed, the new homeowners on those lots would follow the same rules,
-                covenants, and dues as everyone else in the neighborhood.
+                covenants, and dues as everyone else in Colledge Farms HOA.
             </p>
         </div>
 
@@ -383,13 +383,13 @@ PETITION_TEMPLATE = """
             <p>
                 We've negotiated a deal with Symphony: if we help them get city approval to develop a 9th lot (carved out of the
                 existing 8-lot area, and sized to match the rest of our homes), Symphony will contribute <strong>$65,000 to our HOA
-                fund</strong>. That money would go toward a new amenity on our HOA property &mdash; with the HOA Members deciding
+                fund</strong>. That money would go toward a new amenity on our HOA property &mdash; with the members of the Colledge Farms HOA deciding
                 together what that amenity will be.
             </p>
         </div>
 
         <p class="confirm-text">
-            By signing below, you confirm you are a homeowner in the HOA and that you've read and support both items above.
+            By signing below, you confirm you are a homeowner in the Colledge Farms HOA and that you've read and support both items above.
         </p>
 
         <p class="instruction">Please print your name, write your address, and sign on your line.</p>
