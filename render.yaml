@@ -1,0 +1,23 @@
+databases:
+  - name: petition-db
+    plan: free
+    databaseName: petition
+
+services:
+  - type: web
+    name: colledge-farms-petition
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: petition-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        value: colledge2026
+      - key: PYTHON_VERSION
+        value: "3.11"
