@@ -363,18 +363,16 @@ PETITION_TEMPLATE = """
 
     <div class="content">
         <p class="intro">
-            As homeowners in our community, we're asking you to review and sign a petition to show support on the two items below. By signing this
-            petition, you're confirming that you live in the neighborhood and that you support both measures.
-            This is not an official vote to make this happen, as Lehi City has to approve a 9th lot for Symphony Homes.
-            You are simply showing your support by signing. Your signature entry will be used to show the city you support these measures.
+            As homeowners in our community, we're asking you to review and vote on the two items below. By signing this
+            petition, you're confirming that you live in the Colledge Farms HOA and that you support both measures.
         </p>
 
         <div class="item">
             <h3>Item 1 &mdash; Bring the 8 New Lots into Our HOA</h3>
             <p>
-                Symphony is currently developing 8 lots right next to our neighborhood. This vote is to officially bring those 8
+                Symphony is currently developing 8 lots north of River Park Way along 1500 N next to our neighborhood. This vote is to officially bring those 8
                 lots into our HOA boundary. Once annexed, the new homeowners on those lots would follow the same rules,
-                covenants, and dues as everyone else in Colledge Farms HOA.
+                covenants, and dues as everyone else in the HOA.
             </p>
         </div>
 
@@ -383,8 +381,8 @@ PETITION_TEMPLATE = """
             <p>
                 We've negotiated a deal with Symphony: if we help them get city approval to develop a 9th lot (carved out of the
                 existing 8-lot area, and sized to match the rest of our homes), Symphony will contribute <strong>$65,000 to our HOA
-                fund</strong>. That money would go toward a new amenity on our HOA property &mdash; with the members of the Colledge Farms HOA deciding
-                together what that amenity will be.
+                fund</strong>. That money would go toward a new amenity on our HOA property &mdash; with the Colledge Farms HOA members deciding
+                together what that amenity will be at a future date.
             </p>
         </div>
 
@@ -392,7 +390,7 @@ PETITION_TEMPLATE = """
             By signing below, you confirm you are a homeowner in the Colledge Farms HOA and that you've read and support both items above.
         </p>
 
-        <p class="instruction">Please print your name, write your address, and sign on your line.</p>
+        <p class="instruction">Please fill out all fields and sign.</p>
     </div>
 
     <div class="sig-count">
