@@ -19,7 +19,6 @@ ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "colledge2026")
 def get_db():
     if DATABASE_URL:
         import psycopg2
-        import psycopg2.extras
         conn = psycopg2.connect(DATABASE_URL)
         return conn
     else:
@@ -29,15 +28,16 @@ def get_db():
 
 
 def db_fetchall(conn, query):
-    cur = conn.cursor()
     if DATABASE_URL:
         import psycopg2.extras
         cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-    cur.execute(query)
-    rows = cur.fetchall()
-    if DATABASE_URL:
+        cur.execute(query)
+        rows = cur.fetchall()
         return [dict(r) for r in rows]
     else:
+        cur = conn.cursor()
+        cur.execute(query)
+        rows = cur.fetchall()
         return [dict(r) for r in rows]
 
 
@@ -49,8 +49,9 @@ def db_execute(conn, query, params):
 
 def init_db():
     conn = get_db()
+    cur = conn.cursor()
     if DATABASE_URL:
-        conn.cursor().execute("""
+        cur.execute("""
             CREATE TABLE IF NOT EXISTS signatures (
                 id SERIAL PRIMARY KEY,
                 printed_name TEXT NOT NULL,
@@ -60,7 +61,7 @@ def init_db():
             )
         """)
     else:
-        conn.execute("""
+        cur.execute("""
             CREATE TABLE IF NOT EXISTS signatures (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 printed_name TEXT NOT NULL,
@@ -70,6 +71,7 @@ def init_db():
             )
         """)
     conn.commit()
+    cur.close()
     conn.close()
 
 
