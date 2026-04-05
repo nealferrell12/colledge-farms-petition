@@ -363,23 +363,18 @@ PETITION_TEMPLATE = """
 
     <div class="content">
         <p class="intro">
-            As homeowners in our community, we're asking you to review and show support on the two items below. By signing this
+            As an HOA Board, we're asking the HOA members to review and show support on the two items below. By signing this
             petition, you're confirming that you live in the Colledge Farms HOA and that you support both measures.
             This is not an official vote to make this happen, as Lehi City has to approve a 9th lot for Symphony Homes.
             You are simply showing your support by signing. Your entry will be recorded to show the city you support these measures.
         </p>
 
-        <div class="item">
-            <h3>Item 1 &mdash; Bring the 8 New Lots into Our HOA</h3>
-            <p>
-                Symphony is currently developing 8 lots adjacent to our neighborhood, between River Park Way and 1500 N.
-                By signing, you support bringing those 8 lots into our HOA boundary. Once annexed, the future homeowners on
-                those lots would follow the same rules, covenants, and dues as everyone else in the neighborhood.
-            </p>
-        </div>
+        <p class="intro">
+            Symphony is currently developing 8 lots adjacent to our neighborhood, between River Park Way and 1500 N.
+        </p>
 
         <div class="item">
-            <h3>Item 2 &mdash; Support a 9th Lot in Exchange for a $65,000 Community Amenity Fund</h3>
+            <h3>Item 1 &mdash; Support a 9th Lot in Exchange for a $65,000 Community Amenity Fund</h3>
             <p>
                 We've negotiated a deal with Symphony: if we help them get city approval to develop a 9th lot (carved out of the
                 existing 8-lot area, and sized to match the rest of our homes), Symphony will contribute <strong>$65,000 to our HOA
@@ -388,8 +383,16 @@ PETITION_TEMPLATE = """
             </p>
         </div>
 
+        <div class="item">
+            <h3>Item 2 &mdash; Bring the 9 New Lots into Our HOA (assuming a 9th is approved)</h3>
+            <p>
+                By signing, you support bringing those 9 lots into our HOA boundary. Once annexed, the future homeowners on
+                those lots would follow the same rules, covenants, and dues as everyone else in the HOA.
+            </p>
+        </div>
+
         <p class="intro">
-            In the event that the city does not approve a 9th lot for Symphony in the future, we will revisit the annexation discussion whether or not to include the 8 lots in the HOA.
+            In the event that the city does not approve a 9th lot for Symphony in the future, we will revisit the annexation discussion whether or not to include 8 lots in the HOA, and hold a separate vote.
         </p>
 
         <p class="confirm-text">
